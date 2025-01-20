@@ -281,18 +281,113 @@
 
 }
 
+/* stories card styles */
+.stories-container {
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+
+}
+
+.stories-card {
+    justify-content: space-evenly;
+}
+
+.short-stories-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+
+.large-stories-card {
+    width: 540px;
+    border-radius: 16px;
+    border: 0.94px solid rgb(239, 238, 239);
+    background-color: #FFFFFF;
+}
+
+.long-stories-img {
+    width: 540px;
+    height: 337px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.stories-title {
+    width: 402.49px;
+    height: 69.98px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: start;
+    padding-left: 38px;
+    margin: 10px 0px;
+}
+
+.stories-description {
+    width: 433.06px;
+    height: 75.74px;
+    color: rgb(102, 102, 102);
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start;
+    padding-left: 38px;
+    margin-bottom: 24px;
+}
+
+.stories-date {
+    width: 174.51px;
+    height: 47.93px;
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    padding: 14px 18px;
+    border: none;
+
+}
+
+.short-card1 {
+    width: 290.69px;
+    height: 301.61px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.short-stories-img {
+    width: 291px;
+    height: 177px;
+    border-radius: 16px 16px 0px 0px;
+}
+.short-title{
+width: 198.04px;
+height: 47.93px;
+color: rgb(0, 0, 0);
+font-size: .9rem;
+font-weight: 700;
+padding-left: 38px;
+text-align: start;
+}
+.stories-btn{
+    background-color: rgb(17, 17, 17);
+    border-radius: 12px;
+    padding: 10px 60px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #FFFFFF;  
+   margin: 60px auto;
+   
+}
 /* media query section */
 @media screen and (max-width:576px) {
 
     .size,
     .banner-container,
-    .curriculum-container {
+    .curriculum-container,.stories-container{
         max-width: 576px;
     }
 
     .logo-btn,
     .nav-links,
-    .logo-title ,.sliding-arrow{
+    .logo-title,
+    .sliding-arrow ,.large-stories-card{
         display: none;
     }
 
@@ -350,6 +445,17 @@
         align-items: center;
         justify-content: center;
         align-items: center;
+    }
+    .short-stories-card {
+     width: 540px;
+     height: auto;
+     justify-content: space-between;
+    }
+    .short-card1{
+        width: 240px;
+    }
+    .short-stories-img{
+        width: 100%;
     }
 
 }
