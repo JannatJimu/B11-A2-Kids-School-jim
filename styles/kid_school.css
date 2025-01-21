@@ -157,13 +157,14 @@
     background-image: url('../images/bg.png');
     background-position: center;
     text-align: center;
-    margin: 60px auto;
+    margin: 60px auto 0px;
 }
 
 .curriculum-title {
     font-size: 2.8rem;
     font-weight: 700;
     color: rgb(0, 0, 0);
+    margin: 50px;
 }
 
 .curriculum-container-cards {
@@ -228,7 +229,7 @@
 .curriculum-card-1 {
     width: 367.8px;
     height: 476.78px;
-    border: 0.94px solid rgb(222, 245, 255);
+    border: 0.94px solid rgb(198, 226, 238);
     border-radius: 18.86px;
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
@@ -237,7 +238,7 @@
 .curriculum-card-2 {
     width: 367.8px;
     height: 476.78px;
-    border: 0.94px solid rgb(255, 244, 220);
+    border: 0.94px solid rgb(238, 222, 185);
     border-radius: 18.86px;
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
@@ -246,7 +247,7 @@
 .curriculum-card-3 {
     width: 367.8px;
     height: 476.78px;
-    border: 0.94px solid rgb(242, 232, 255);
+    border: 0.94px solid rgb(218, 201, 241);
     border-radius: 18.86px;
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
@@ -261,8 +262,8 @@
 
 .left-arrow,
 .right-arrow {
-    margin-top: 80px;
-    margin-bottom: 60px;
+    margin-top: 70px;
+    margin-bottom: 30px;
     width: 60px;
     height: 60px;
     color: #FFFFFF;
@@ -271,7 +272,6 @@
     justify-items: center;
 
 }
-
 #sliding-left,
 #sliding-right {
     padding: 18px 22px;
@@ -280,7 +280,10 @@
     filter: invert(100%) brightness(200%);
 
 }
+#sliding-left:hover,#sliding-right:hover {
+    filter:none;
 
+}
 /* stories card styles */
 .stories-container {
     background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
@@ -333,7 +336,7 @@
     margin-bottom: 24px;
 }
 
-.stories-date {
+/* .stories-date {
     width: 174.51px;
     height: 47.93px;
     border-radius: 47.93px;
@@ -341,7 +344,36 @@
     padding: 14px 18px;
     border: none;
 
-}
+} */
+.left-story-time time{
+    background-color: #05D4DF;
+    color: white;
+    padding: 3% 5%;
+    border-radius: 30px;
+    position: relative;
+    top:-20px;
+    left:-140px;
+   }
+   .right-story-time time{
+    background-color: #95B226;
+    color: white;
+    padding: 3% 5%;
+    border-radius: 30px;
+    margin-left: 5px;
+    position: relative;
+    top:-18px;
+    left:-35px;
+   }
+   .right-story-time-2 time{
+    background-color: #5D58F0;
+    color: white;
+    padding: 3% 5%;
+    border-radius: 30px;
+    margin-left: 5px;
+    position: relative;
+    top:-18px;
+    left:-35px;
+   }
 
 .short-card1 {
     width: 290.69px;
@@ -355,39 +387,123 @@
     height: 177px;
     border-radius: 16px 16px 0px 0px;
 }
-.short-title{
-width: 198.04px;
-height: 47.93px;
-color: rgb(0, 0, 0);
-font-size: .9rem;
-font-weight: 700;
-padding-left: 38px;
-text-align: start;
+
+.short-title {
+    width: 198.04px;
+    height: 47.93px;
+    color: rgb(0, 0, 0);
+    font-size: .9rem;
+    font-weight: 700;
+    padding-left: 38px;
+    text-align: start;
 }
-.stories-btn{
+
+.stories-btn {
     background-color: rgb(17, 17, 17);
     border-radius: 12px;
     padding: 10px 60px;
     border: none;
     font-size: 1.25rem;
     font-weight: 700;
-    color: #FFFFFF;  
-   margin: 60px auto;
-   
+    color: #FFFFFF;
+    margin: 60px auto;
+
 }
+
+/* footer section styles */
+.footer {
+    background: rgb(1, 172, 253);
+    margin-top: 0px;
+}
+
+.footer-container {
+    width: 1070.91px;
+    height: 500px;
+    ;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.footer-logo-container,
+.footer-web-links {
+    align-items: center;
+    padding-top: 124px;
+}
+
+.footer-logo {
+    /* filter: invert(100%) brightness(200%); */
+    width: 82.9px;
+    height: 103px;
+    margin-top: 10px;
+}
+
+.footer-title {
+    width: 207px;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.footer-description {
+    width: 399.02px;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.footer-about {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-foot {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 20px;
+}
+
+#keep {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0px;
+    padding: 15px 0px 20px;
+}
+
+.about {
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.footer-web-links {
+    padding-bottom: 30px;
+}
+
+
 /* media query section */
 @media screen and (max-width:576px) {
 
     .size,
     .banner-container,
-    .curriculum-container,.stories-container{
+    .curriculum-container,
+    .stories-container {
         max-width: 576px;
     }
-
     .logo-btn,
     .nav-links,
     .logo-title,
-    .sliding-arrow ,.large-stories-card{
+    .sliding-arrow,
+    .large-stories-card {
         display: none;
     }
 
@@ -446,16 +562,37 @@ text-align: start;
         justify-content: center;
         align-items: center;
     }
+
     .short-stories-card {
-     width: 540px;
-     height: auto;
-     justify-content: space-between;
+        width: 540px;
+        height: auto;
+        justify-content: space-between;
     }
-    .short-card1{
-        width: 240px;
+
+    .short-card1 {
+        width: 250px;
     }
-    .short-stories-img{
+
+    .short-stories-img {
         width: 100%;
     }
 
+    .footer-container {
+        max-width: 550px;
+        flex-direction: column;
+        height: auto;
+        padding-left: 20px;
+    }
+    
+    .footer-logo-container,
+    .footer-about,
+    .footer-web-links {
+        padding-top: 60px;
+    }
+
+    .footer-about,
+    .footer-web-links ,.footer-logo-container{
+        width: 550px;
+
+    }
 }

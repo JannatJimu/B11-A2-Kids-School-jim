@@ -83,19 +83,23 @@
         <!-- sliding arrow section -->
         <div class="sliding-arrow display-flex">
             <div class="left-arrow">
-
                 <img id="sliding-left" src="./images/chevron-left-solid.svg" alt="">
             </div>
             <div class="right-arrow">
                 <img id="sliding-right" src="./images/chevron-right-solid.svg" alt="">
             </div>
         </div>
+        <!-- story container -->
         <section class="stories-container">
             <h4 class="curriculum-title">Our Stories</h4>
             <div class="stories-card display-flex">
                 <div class="large-stories-card">
                     <img class="long-stories-img" src="./images/story-1.png" alt="">
-                    <button class="stories-date">November 19, 2019</button>
+
+                    <div class="left-story-time">
+                        <time datetime="2025-01-21">January 21, 2025</time>
+                    </div>
+
                     <h5 class="stories-title">A fun toddler coloring training on
                         classroom</h5>
                     <p class="stories-description">Beautiful branding for changes by Never Now in Australia.
@@ -105,25 +109,33 @@
                 <div class="short-stories-card">
                     <div class="short-card1">
                         <img class="short-stories-img" src="./images/story-2.png" alt="">
-                        <button>November 19, 2019</button>
+                        <div class="right-story-time">
+                            <time datetime="2019-11-19">November 19, 2019</time>
+                        </div>
                         <h5 class="short-title">Find out if a school fits the
                             family's needs</h5>
                     </div>
                     <div class="short-card1">
                         <img class="short-stories-img" src="./images/story-3.png" alt="">
-                        <button>November 19, 2019</button>
+                        <div class="right-story-time-2">
+                            <time datetime="2019-11-19">November 19, 2019</time>
+                        </div>
                         <h5 class="short-title">Summer math & literacy
                             centres for kids</h5>
                     </div>
                     <div class="short-card1">
                         <img class="short-stories-img" src="./images/story-4.png" alt="">
-                        <button>September 10, 2019</button>
+                        <div class="right-story-time">
+                            <time datetime="2019-09-10">September 10, 2019</time>
+                        </div>
                         <h5 class="short-title">Classroom management
                             techniques for new tutors</h5>
                     </div>
                     <div class="short-card1">
                         <img class="short-stories-img" src="./images/story-5.png" alt="">
-                        <button>July 19, 2019</button>
+                        <div class="right-story-time">
+                            <time datetime="2019-07-19">July 19, 2019</time>
+                        </div>
                         <h5 class="short-title">Conversation rhymes
                             improve kids listening</h5>
                     </div>
@@ -134,7 +146,37 @@
             <button class="stories-btn">View All</button>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer-container display-flex ">
+            <div>
+                <div class="footer-logo-container display-flex">
+                    <img class="footer-logo" src="./images/footer-2.png" alt="">
+                    <h4 class="footer-title">Kids
+                        Education</h4>
+                </div>
+                <p class="footer-description">Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon Bianca
+                    pan bacon pineapple Aussie.
+                    Mayo
+                    rib sauce Hawaiian meatball.</p>
+            </div>
+
+            <div class="footer-about display-flex">
+                <h5 id="about-foot">About School</h5>
+                <h6 class="about">Home</h6>
+                <h6 class="about">About</h6>
+                <h6 class="about">Facilities</h6>
+                <h6 class="about"> Admission</h6>
+            </div>
+            <div class="footer-web-links">
+                <h5 id="keep">Keep In Touch</h5>
+                <a href=""><img src="./images/fb.png" alt=""></a>
+                <a href=""><img src="./images/dribble.png" alt=""></a>
+                <a href=""><img src="./images/twitter.png" alt=""></a>
+                <a href=""><img src="./images/google+.png" alt=""></a>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
