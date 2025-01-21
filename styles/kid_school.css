@@ -120,7 +120,7 @@
 }
 
 .banner-title {
-    width: 640px;
+    /* width: 640px; */
     /* height: 183px; */
     font-size: 3.5rem;
     font-weight: 700;
@@ -543,7 +543,9 @@
         text-align: center;
 
     }
-
+    .banner-details marquee{
+          width:560px;
+    }
     .hero-img {
         width: 90%;
         height: auto;
